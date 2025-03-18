@@ -1,15 +1,15 @@
-import React from 'react';
-import './bookcard.css'; // Assuming you will create a CSS file for styling
+// write the book component code here
+import React from 'react'
 
-const BookCard = ({ book }) => {
+function Bookcard({name,image,author,genre}) {
   return (
-    <div className="bookcard">
-      <img src={book.image} alt={book.title} className="bookcard-image" />
-      <h2 className="bookcard-title">{book.title}</h2>
-      <p className="bookcard-author">Author: {book.author}</p>
-      <p className="bookcard-description">{book.description}</p>
-    </div>
-  );
-};
+    <div>
+    <h1>bookname:{name}</h1>
+     <h2>author:{author}</h2>
+     <p>genre: {genre}</p>
+     <img src={image}></img>
+     </div>
+  )
+}
 
-export default BookCard
+export default Bookcard
